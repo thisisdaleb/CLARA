@@ -1,0 +1,25 @@
++ac
+/sc12
+/sa9
+-b1
+Sam: Man, I wish I had been stronger.
+-pa 200 195
+-w8
+Sam: I miss Abe.......
+-pc 650 200
+-S1
+Xsar: Hey, Sam, why so blue?
+Sam: Well, I've been thinking, what if I had been stronger? Do you think Abe would have kept me on the team?
+Xsar: Oh, come on, Sam! You know that Abe isn't like that! He loves us all! He wanted to keep us safe!
+Xsar: So what if the voices told him to put us in the box? He didn't release us, and he even changed boxes afterwards!
+Sam: But maybe if I had been stronger, the voices wouldn't have kicked me out...
+Xsar: Sam, you can't keep looking at the past. You know Abe loved you, and still loves you, right?
+Sam: Yeah, I know, I know...
+Xsar: So you can't keep focusing on that type of stuff! You gotta remember the good days, while looking forward to what comes next!
+Xsar: We gotta keep on cheering on Abe, just like we always have, and just like we always will!
+Sam: ....Yeah, I think you're right.            Thanks, Xsar!
+Xsar: Now let's go eat some Kanto Krispy Kremes, okay?
+-pc 2000 2000
+Sam: Yeah!
+-pa 2000 2000
+-w10

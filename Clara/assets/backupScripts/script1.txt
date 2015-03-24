@@ -1,0 +1,28 @@
++ab
+-pa 200 200
+-pb 750 160
+Clara: Hello! Welcome to Treasuremon! This is a test of the automated animation system, Clara!
+-ma 0 100
+-ca2
+-ma 1 -100
+-ca1
+-w2
+-s1
+-mb 2 20
+-b1
+-b2
+-b1
+-b2
+-b1
+-b2
+-b1
+-b2
+-b1
+-b2
+Clara: So the maps are switching, and all the characters are moving around, disobeying the laws of physics, but is the dialog box still here?
+-b1
+-b2
+-b1
+-b2
+-b1
+-w20

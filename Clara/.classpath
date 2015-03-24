@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="assets"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="lib/bin/artemis.jar" sourcepath="lib/src/artemis-src.jar"/>
+	<classpathentry kind="lib" path="lib/bin/box2dlights-1.2.jar" sourcepath="lib/src/box2dlights-1.2-sources.jar"/>
+	<classpathentry kind="lib" path="lib/bin/gdx-1.2.0.jar" sourcepath="lib/src/gdx-1.2.0-sources.jar"/>
+	<classpathentry kind="lib" path="lib/bin/gdx-backend-lwjgl-1.2.0.jar" sourcepath="lib/src/gdx-backend-lwjgl-1.2.0-sources.jar"/>
+	<classpathentry kind="lib" path="lib/bin/gdx-box2d-1.2.0.jar" sourcepath="lib/src/gdx-box2d-1.2.0-sources.jar"/>
+	<classpathentry kind="lib" path="lib/bin/gdx-box2d-platform-1.2.0-natives-desktop.jar"/>
+	<classpathentry kind="lib" path="lib/bin/gdx-bullet-1.2.0.jar" sourcepath="lib/src/gdx-bullet-1.2.0-sources.jar"/>
+	<classpathentry kind="lib" path="lib/bin/gdx-bullet-platform-1.2.0-natives-desktop.jar"/>
+	<classpathentry kind="lib" path="lib/bin/gdx-controllers-1.2.0.jar" sourcepath="lib/src/gdx-controllers-1.2.0-sources.jar"/>
+	<classpathentry kind="lib" path="lib/bin/gdx-controllers-desktop-1.2.0.jar" sourcepath="lib/src/gdx-controllers-desktop-1.2.0-sources.jar"/>
+	<classpathentry kind="lib" path="lib/bin/gdx-controllers-platform-1.2.0-natives-desktop.jar"/>
+	<classpathentry kind="lib" path="lib/bin/gdx-freetype-1.2.0.jar" sourcepath="lib/src/gdx-freetype-1.2.0-sources.jar"/>
+	<classpathentry kind="lib" path="lib/bin/gdx-freetype-platform-1.2.0-natives-desktop.jar"/>
+	<classpathentry kind="lib" path="lib/bin/gdx-natives.jar"/>
+	<classpathentry kind="lib" path="lib/bin/gdx-tools-1.2.0.jar" sourcepath="lib/src/gdx-tools-1.2.0-sources.jar"/>
+	<classpathentry kind="lib" path="lib/bin/jinput-2.0.5.jar" sourcepath="lib/src/jinput-2.0.5-sources.jar"/>
+	<classpathentry kind="lib" path="lib/bin/jinput-platform-2.0.5-natives-linux.jar"/>
+	<classpathentry kind="lib" path="lib/bin/jinput-platform-2.0.5-natives-osx.jar"/>
+	<classpathentry kind="lib" path="lib/bin/jinput-platform-2.0.5-natives-windows.jar"/>
+	<classpathentry kind="lib" path="lib/bin/jlayer-1.0.1-gdx.jar" sourcepath="lib/src/jlayer-1.0.1-gdx-sources.jar"/>
+	<classpathentry kind="lib" path="lib/bin/jorbis-0.0.17.jar" sourcepath="lib/src/jorbis-0.0.17-sources.jar"/>
+	<classpathentry kind="lib" path="lib/bin/jutils-1.0.0.jar" sourcepath="lib/src/jutils-1.0.0-sources.jar"/>
+	<classpathentry kind="lib" path="lib/bin/lwjgl_util-2.9.1.jar" sourcepath="lib/src/lwjgl_util-2.9.1-sources.jar"/>
+	<classpathentry kind="lib" path="lib/bin/lwjgl-2.9.1.jar" sourcepath="lib/src/lwjgl-2.9.1-sources.jar"/>
+	<classpathentry kind="lib" path="lib/bin/lwjgl-platform-2.9.1-natives-linux.jar"/>
+	<classpathentry kind="lib" path="lib/bin/lwjgl-platform-2.9.1-natives-osx.jar"/>
+	<classpathentry kind="lib" path="lib/bin/lwjgl-platform-2.9.1-natives-windows.jar"/>
+	<classpathentry kind="lib" path="lib/bin/jfugue-5.0.jar" sourcepath="lib/jfugue/jfugue-5.0-src.zip"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

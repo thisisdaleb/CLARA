@@ -1,0 +1,5 @@
+*.otl
+*/.temp
+*.class
+Clara/bin
+.metadata

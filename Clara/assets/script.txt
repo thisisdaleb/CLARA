@@ -1,0 +1,152 @@
++defg
+-L2
+-4
+/se3
+/sf3
+/sg3
+-bb
+-pe 200 195
+-me 328 0
+-me -328 0
+-me 328 0
+-me -328 0
+-me 328 0
+-me -328 0
+-me 328 0
+-me -328 0
+-w10
+Abe: Okay, here we go, the battle tent!
+Abe: I've heard so much about this place! I gotta win!
+Abe: Go, O'nix!
+-pd 650 200
+-w8
+-2
+/sd8
+-cd2
+-2
+/sd10
+-cd1
+Abe: What was that?......
+-S2
+-w1
+-3
+-L1
+/sd8
+-cd2
+-w6
+-2
+-cd4
+-3
+-pf 600 900 250 400
+-pg 600 900 250 400
+-cd2
+-3
+-pf 600 900 250 400
+-pg 600 900 250 400
+-cd4
+-cd2
+-3
+-pf 600 900 250 400
+-pg 600 900 250 400
+-3
+-pf 600 900 250 400
+-pg 600 900 250 400
+-cd3
+-cd2
+-3
+-pf 600 900 250 400
+-pg 600 900 250 400
+-cd3
+-2
+-cd5
+-s1
+-3
+-pf 600 900 250 400
+-pg 600 900 250 400
+-cd2
+-3
+-pf 600 900 250 400
+-pg 600 900 250 400
+-cd3
+-3
+-pf 600 900 250 400
+-pg 600 900 250 400
+-cd5
+-3
+-pf 600 900 250 400
+-pg 600 900 250 400
+-w2
+-cd6
+-3
+-pf 600 900 250 400
+-pg 600 900 250 400
+-w2
+-2
+-cd7
+-3
+-pf 600 900 250 400
+-pg 600 900 250 400
+-cd2
+M: Hello, Abe.
+-3
+-pf 600 900 250 400
+-pg 600 900 250 400
+-cd6
+-3
+-pf 2000 2000
+-pg 2000 2000
+-cd2
+Abe: What... Who... What did you do to Onix?
+M: Oh, I didn't do anything. You did.
+-2
+-cd3
+M: You shouldn't have entered the battle tent, Abe.
+-4
+-cd5
+-cd6
+-cd7
+-cd2
+-w4
+-cd3
+-2
+-cd4
+-cd5
+-w5
+-2
+-cd1
+-cd2
+-S2
+Abe: No, the battle tent is meant for trainers! There was no reason to not come here!
+-2
+-cd5
+-cd2
+Abe: WHAT DID YOU DO TO ONIX?!
+M: You should be worried about a little bit more than just Onix.
+Abe: What do you mean?
+M: How about you check all of your pokemon?
+-cd5
+-cd2
+Abe:...Leech King... Sam... Xsar... O'nix... Surfhorn.... Clem....
+Abe: WHERE ARE THEY?
+-2
+-S2
+M: Why so blue, Abe?
+-4
+-/s1
+-pd 300 0
+-cd5
+Why so blue?
+-3
+-pe 9999 9999
+-bb
+Abe blacked out!
+-3
+/sd30
+-cd5
+-w8
+-cd6
+-w8
+-cd7
+-w1
+-pd 9999 9999
+-w20
