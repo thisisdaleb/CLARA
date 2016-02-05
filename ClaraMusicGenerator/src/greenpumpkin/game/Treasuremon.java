@@ -12,5 +12,6 @@ public class Treasuremon{
 	
 	public static void main (String[] arg) {
 		MusicGenerator musicCreation = new MusicGenerator();
+		musicCreation.createMusic();
 	}
 }

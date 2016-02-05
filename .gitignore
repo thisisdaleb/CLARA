@@ -3,3 +3,5 @@
 *.class
 Clara/bin
 .metadata
+.recommenders
+.gitignore~
