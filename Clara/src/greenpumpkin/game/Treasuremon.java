@@ -24,7 +24,7 @@ public class Treasuremon extends Game {
 	}
 
 	public static void main (String[] arg) {
-		MusicGenerator musicCreation = new MusicGenerator();
+		//MusicGenerator musicCreation = new MusicGenerator();
 		LwjglApplicationConfiguration cfg = new LwjglApplicationConfiguration();
 		cfg.title = "Animus";
 		cfg.width = WIDTH;

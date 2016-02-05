@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. --><project basedir="." default="build" name="Animus">
+    <property environment="env"/>
+    <property name="ECLIPSE_HOME" value="../../Users/GS/Documents/eclipse"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.6"/>
+    <property name="source" value="1.6"/>
+    <path id="Animus.classpath">
+        <pathelement location="bin"/>
+        <pathelement location="lib/bin/artemis.jar"/>
+        <pathelement location="lib/bin/box2dlights-1.2.jar"/>
+        <pathelement location="lib/bin/gdx-1.2.0.jar"/>
+        <pathelement location="lib/bin/gdx-backend-lwjgl-1.2.0.jar"/>
+        <pathelement location="lib/bin/gdx-box2d-1.2.0.jar"/>
+        <pathelement location="lib/bin/gdx-box2d-platform-1.2.0-natives-desktop.jar"/>
+        <pathelement location="lib/bin/gdx-bullet-1.2.0.jar"/>
+        <pathelement location="lib/bin/gdx-bullet-platform-1.2.0-natives-desktop.jar"/>
+        <pathelement location="lib/bin/gdx-controllers-1.2.0.jar"/>
+        <pathelement location="lib/bin/gdx-controllers-desktop-1.2.0.jar"/>
+        <pathelement location="lib/bin/gdx-controllers-platform-1.2.0-natives-desktop.jar"/>
+        <pathelement location="lib/bin/gdx-freetype-1.2.0.jar"/>
+        <pathelement location="lib/bin/gdx-freetype-platform-1.2.0-natives-desktop.jar"/>
+        <pathelement location="lib/bin/gdx-natives.jar"/>
+        <pathelement location="lib/bin/gdx-tools-1.2.0.jar"/>
+        <pathelement location="lib/bin/jinput-2.0.5.jar"/>
+        <pathelement location="lib/bin/jinput-platform-2.0.5-natives-linux.jar"/>
+        <pathelement location="lib/bin/jinput-platform-2.0.5-natives-osx.jar"/>
+        <pathelement location="lib/bin/jinput-platform-2.0.5-natives-windows.jar"/>
+        <pathelement location="lib/bin/jlayer-1.0.1-gdx.jar"/>
+        <pathelement location="lib/bin/jorbis-0.0.17.jar"/>
+        <pathelement location="lib/bin/jutils-1.0.0.jar"/>
+        <pathelement location="lib/bin/lwjgl_util-2.9.1.jar"/>
+        <pathelement location="lib/bin/lwjgl-2.9.1.jar"/>
+        <pathelement location="lib/bin/lwjgl-platform-2.9.1-natives-linux.jar"/>
+        <pathelement location="lib/bin/lwjgl-platform-2.9.1-natives-osx.jar"/>
+        <pathelement location="lib/bin/lwjgl-platform-2.9.1-natives-windows.jar"/>
+    </path>
+    <target name="init">
+        <mkdir dir="bin"/>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="src">
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="assets">
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="bin"/>
+    </target>
+    <target depends="clean" name="cleanall"/>
+	<target depends="build,run" name="buildrun"/>
+	<target depends="Animus" name="run"/>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects"/>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="bin" includeantruntime="false" source="${source}" target="${target}">
+            <src path="src"/>
+            <src path="assets"/>
+            <classpath refid="Animus.classpath"/>
+        </javac>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+    <target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
+        <copy todir="${ant.library.dir}">
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </copy>
+        <unzip dest="${ant.library.dir}">
+            <patternset includes="jdtCompilerAdapter.jar"/>
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </unzip>
+    </target>
+    <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
+        <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
+        <antcall target="build"/>
+    </target>
+    <target name="Animus">
+        <java classname="greenpumpkin.game.Animus" failonerror="true" fork="yes">
+            <classpath refid="Animus.classpath"/>
+        </java>
+    </target>
+</project>

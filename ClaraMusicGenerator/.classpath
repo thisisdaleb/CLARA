@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="lib/bin/jlayer-1.0.1-gdx.jar" sourcepath="lib/src/jlayer-1.0.1-gdx-sources.jar"/>
+	<classpathentry kind="lib" path="lib/bin/jorbis-0.0.17.jar" sourcepath="lib/src/jorbis-0.0.17-sources.jar"/>
+	<classpathentry kind="lib" path="lib/bin/jutils-1.0.0.jar" sourcepath="lib/src/jutils-1.0.0-sources.jar"/>
+	<classpathentry kind="lib" path="lib/bin/jfugue-5.0.jar" sourcepath="lib/jfugue/jfugue-5.0-src.zip"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

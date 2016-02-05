@@ -99,12 +99,6 @@ public class BatchRendererS extends EntitySystem {
 			if(backgroundList.get(backgroundList.size()-1).locationX<=-1280)
 				backgroundList.get(backgroundList.size()-1).locationX=0;
 		}
-		//draws the characters (deprecated)
-		//for (int i = 0; i < characterList.size();i++)
-		//{	
-		//	characterList.get(i).sprite.setPosition(characterList.get(i).locationX, characterList.get(i).locationY);
-		//	characterList.get(i).sprite.draw(TreasuremonWorld.batch);
-		//}
 		
 		//draws the characters for real
 		for (int i = 0, s = entities.size(); s > i; i++) {
