@@ -7,35 +7,35 @@ import org.jfugue.player.Player;
 
 public class MusicGenerator {
 	Player player = new Player();
-	private ArrayList<ScaleList> majorScales = new ArrayList<ScaleList>();
-	private ArrayList<ScaleList> minorScales = new ArrayList<ScaleList>();
-	private ScaleList scale = null;
+	private ArrayList<ScaleList> majorScales = new ArrayList<ScaleList>(); //12 scales, starts at C
+	private ArrayList<ScaleList> minorScales = new ArrayList<ScaleList>(); //12 scales, starts at C
+	private ScaleList scale = null; //scale being used for song
 
 	public MusicGenerator() {
-		for (int k = 0; k < 12; k++) {
-			majorScales.add(new ScaleList(k, true));
-			minorScales.add(new ScaleList(k, false));
+		for (int k = 0; k < 12; k++) { //loop through C up to B
+			majorScales.add(new ScaleList(k, true)); //create major scales
+			minorScales.add(new ScaleList(k, false)); //create minor scales
 		}
 	}
 
 	public void createMusic() {
 		// These 2 if/else statements will decide what scale to use, whether it
 		// be major or minor
-		if (Math.random() < 0.9)
-			scale = majorScales.get((int) (Math.random() * 11.4));
+		if (Math.random() < 0.5) //number is ratio of major to all
+			scale = majorScales.get((int) (Math.random() * 11.4)); //picks major key
 		else
-			scale = minorScales.get((int) (Math.random() * 11.4));
-		System.out.println(scale.notes.get(0) + " " + scale.isMajor());
+			scale = minorScales.get((int) (Math.random() * 11.4)); //picks minor key
+		System.out.println(scale.notes.get(0) + " " + scale.isMajor()); //prints the "scaleNumber isMajor"
 
-		Progression chords = new Progression(scale);
-		chords.create();
+		Progression chords = new Progression(scale); //sets scale for progression
+		chords.create(); //creates progression
 
 		System.out.println(chords.progression.size() + " "
-				+ (chords.progression.toString()));
+				+ (chords.progression.toString())); //prints out chosen progression
 		Harmony harmony = new Harmony(scale);
 		harmony.createSimple(chords);
-		harmony.createComplex(4, chords);
-		harmony.play();
+		harmony.createComplex(4, chords);//     /////POINT WHERE MINOR CRASHES/////
+		harmony.play();//     /////SECONDARY CRASH WITH MINOR/////
 
 		Melody melody = new Melody(scale);
 		melody.create(chords);

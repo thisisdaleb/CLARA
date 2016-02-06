@@ -29,8 +29,10 @@ public class Harmony {
 	}
 	
 	public void createComplex(int octave, Progression progression) {
-		createRhythm();
-		placeNotes(octave, progression);
+		if(scale.isMajor()){
+			createRhythm();
+			placeNotes(octave, progression);
+		}
 	}
 
 	private void createRhythm() {
@@ -80,6 +82,9 @@ public class Harmony {
 
 	public void play() {
 		player = new Player();
-		player.play(complex, simple);
+		if(scale.isMajor())
+			player.play(complex, simple);
+		else
+			player.play(simple);
 	}
 }

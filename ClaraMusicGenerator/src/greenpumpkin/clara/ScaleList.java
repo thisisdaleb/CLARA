@@ -3,6 +3,7 @@ package greenpumpkin.clara;
 import java.util.ArrayList;
 
 public class ScaleList {
+	//name ScaleList Heavy misnomer, not a list, contains only one scale
 	ArrayList<Integer> notes = new ArrayList<Integer>();
 	ArrayList<ChordList> chords = new ArrayList<ChordList>();
 	private int[] major = new int[]{0,2,4,5,7,9,11};
@@ -23,15 +24,21 @@ public class ScaleList {
 			if(z==(0 | 3 | 4))
 				chords.add(new ChordList(major[z]+k, "Major"));
 			else if (z==(1 | 2 | 5))
-				chords.add(new ChordList(major[z]+k, "minor"));
+				chords.add(new ChordList(major[z]+k, "Minor"));
 			else
-				chords.add(new ChordList(major[z]+k, "minor"));
+				chords.add(new ChordList(major[z]+k, "Minor"));
 		}
 	}
 
 	private void createMinorScale(int k) {
-		for(int z=0;z<major.length;z++){
+		for(int z=0;z<minor.length;z++){
 			notes.add(minor[z]+k);
+			/*if(z==(2 | 5 | 6))
+				chords.add(new ChordList(minor[z]+k, "Major"));
+			else if (z==(0 | 3 | 4))
+				chords.add(new ChordList(minor[z]+k, "Minor"));
+			else
+				chords.add(new ChordList(minor[z]+k, "Dim"));*/
 		}
 	}
 
@@ -48,7 +55,7 @@ public class ScaleList {
 				note[1] = k+4;
 				note[2] = k+7;
 			}
-			else if(type.equals("minor")){
+			else if(type.equals("Minor")){
 				note[1] = k+3;
 				note[2] = k+7;
 			}
