@@ -21,24 +21,24 @@ public class ScaleList {
 	private void createMajorScale(int k) {
 		for(int z=0;z<major.length;z++){
 			notes.add(major[z]+k);
-			if(z==(0 | 3 | 4))
-				chords.add(new ChordList(major[z]+k, "Major"));
-			else if (z==(1 | 2 | 5))
-				chords.add(new ChordList(major[z]+k, "Minor"));
+			if(z==0 || z==3 || z==4)
+				chords.add(new ChordList(major[z]+k, 0)); //Major chords
+			else if (z==1 || z==2 || z==5)
+				chords.add(new ChordList(major[z]+k, 1)); //Minor Chords
 			else
-				chords.add(new ChordList(major[z]+k, "Minor"));
+				chords.add(new ChordList(major[z]+k, 2)); //Diminished Chords
 		}
 	}
 
 	private void createMinorScale(int k) {
 		for(int z=0;z<minor.length;z++){
 			notes.add(minor[z]+k);
-			/*if(z==(2 | 5 | 6))
-				chords.add(new ChordList(minor[z]+k, "Major"));
-			else if (z==(0 | 3 | 4))
-				chords.add(new ChordList(minor[z]+k, "Minor"));
+			if(z==2 || z==5 || z==6)
+				chords.add(new ChordList(minor[z]+k, 0)); //Major chords
+			else if(z==0 || z==3 || z==4)
+				chords.add(new ChordList(minor[z]+k, 1)); //Minor Chords
 			else
-				chords.add(new ChordList(minor[z]+k, "Dim"));*/
+				chords.add(new ChordList(minor[z]+k, 2)); //Diminished Chords
 		}
 	}
 
@@ -49,13 +49,13 @@ public class ScaleList {
 	class ChordList {
 		int[] note = new int[3];
 
-		public ChordList(int k, String type) {
+		public ChordList(int k, int type) {
 			note[0] = k;
-			if(type.equals("Major")){
+			if(type==0){
 				note[1] = k+4;
 				note[2] = k+7;
 			}
-			else if(type.equals("Minor")){
+			else if(type==1){
 				note[1] = k+3;
 				note[2] = k+7;
 			}

@@ -57,7 +57,7 @@ public class Progression {
 	private void createMinorProgression() {
 		//first chord always root
 				progression.add(0);
-				while(progression.size()<62){
+				while(progression.size()<14){
 					float newChord = (float) Math.random();
 					for(int k=0;k<songInfo.minorProbabilities.length;k++){
 						if(newChord<songInfo.minorProbabilities[k] && progression.get(progression.size()-1)!=k)
