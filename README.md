@@ -1,4 +1,4 @@
 # CLARA
-Automatic animation and algorithmic music generation
+A system used to script visual novel style animations.
 
--Computer for Learning And Rendering Advancements-
+It also can play randomly generated chords and rhythms in midi form
